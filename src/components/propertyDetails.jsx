@@ -26,13 +26,14 @@ class PropertyDetails extends Component {
             <React.Fragment>
                 <h1>Property Details</h1>
                 <h2>{prop1.title}</h2>
-                <p>{prop1.description}</p>
+                <img url={prop1.imageurl} alt="img"></img>
+                <p>{prop1.address}</p>
                 <p>{prop1.rating}</p>
                 <label for="start">Start date:</label>
                 <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31"></input>
                 <label for="start">End date:</label>
                 <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31"></input>
-                <p>{prop1.rentAmount}$ per night</p>
+                <p>{prop1.price}</p>
                 <button onClick={() => this.handleClick(prop1)} className="btn btn-danger btn-sm">Book Room</button>
             </React.Fragment>
         )

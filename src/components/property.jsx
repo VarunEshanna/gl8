@@ -28,7 +28,7 @@ class Property extends Component {
                     <thead>
                     <tr>
                             <th>Title</th>
-                            <th>Description</th>
+                            <th>Address</th>
                             <th>City</th>
                             <th>Rating</th>
                             <th>Price</th>
@@ -41,10 +41,10 @@ class Property extends Component {
                                 <td>
                                     <Link to={`/property/${property.id}`}>{property.title}</Link>
                                 </td>
-                                <td>{property.description}</td>
+                                <td>{property.address}</td>
                                 <td>{property.city}</td>
                                 <td>{property.rating}</td>
-                                <td>{property.rentAmount}</td>
+                                <td>{property.price}</td>
                             </tr>
                         ))}
                     </tbody>
