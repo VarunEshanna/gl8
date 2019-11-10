@@ -9,6 +9,8 @@ import RegisterForm from './components/register';
 import ConfirmUser from './components/ConfirmUser';
 import axios from 'axios';
 
+// Testing
+
 class App extends Component {
 
   /*async componentDidMount(){
